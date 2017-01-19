@@ -48,7 +48,7 @@ main {
 }
 
 main #intro {
-    background-image: url(coffee.jpg);
+    background-image: url(../img/coffee.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -75,21 +75,21 @@ h2 {
 }
 
 main #Skills {
-    background-image: url(ground-coffee.jpg);
+    background-image: url(../img/ground-coffee.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
 
 main #Work {
-    background-image: url(kettle.jpg);
+    background-image: url(../img/kettle.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
 
 main #Contact {
-    background-image: url(cup.jpg);
+    background-image: url(../img/cup.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -165,9 +165,9 @@ footer li a:hover {
 
 @font-face {
   font-family: "head";
-  src: url("Little Kid.woff");
+  src: url("../fonts/Little Kid.woff");
 }
 @font-face {
   font-family: "base";
-  src: url("linowrite.ttf");
+  src: url("../fonts/linowrite.ttf");
 }
