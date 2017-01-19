@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: base;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    width: 100%;
+    height: 10vh;
+    z-index: 5;
+}
+
+h3 {
+    float: left;
+    font-size: 2em;
+    line-height: 100px;
+    text-align: left;
+    padding-left: 40px;
+    margin: 0;
+    color: #d2d9d9;
+}
+
+h3:hover {
+    color: #6A4E34;
+    cursor: pointer;
+}
+
+header .nav {
+    float: right;
+    margin-right: 50px;
+    height: inherit;
+}
+
+
+/*****************************************************main*/
+main {
+    height: 400vh;
+    margin: 0;
+}
+
+main #intro {
+    background-image: url(coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 350px 0;
+}
+
+.introtext {
+    margin: 0 auto;
+    width: 500px;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 75%, transparent 100%);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: head;
+    font-size: 8em;
+}
+
+h2 {
+    font-family: base;
+    font-size: 2.5em;
+}
+
+main #Skills {
+    background-image: url(ground-coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+main #Work {
+    background-image: url(kettle.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+main #Contact {
+    background-image: url(cup.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/**************************************************nav*/
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: inherit;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+
+
+header li a {
+    line-height: 10vh;
+    font-size: 1.1em;
+    width: 80px;
+    height: inherit;
+    text-align: center;
+    color: #d2d9d9;
+    z-index: 6;
+}
+
+header li a:hover {
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to bottom, rgba(106, 78, 52, 0.9), transparent);
+    transition: 0.2s ease-in-out;
+    border-top: 7px solid black;
+}
+
+header .nav ul {
+    justify-content: flex-start;
+}
+
+
+/******************************************************footer*/
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    height: 4vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer li {
+    margin: 8px;
+    color: #d2d9d9;
+}
+
+footer li a {
+    color: #d2d9d9;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: "head";
+  src: url("Little Kid.woff");
+}
+@font-face {
+  font-family: "base";
+  src: url("linowrite.ttf");
+}
