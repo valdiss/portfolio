@@ -45,8 +45,8 @@ header.transparent {
 
 #retour {
     position: fixed;
-    right: 50px;
-    bottom: 80px;
+    right: 5vw;
+    bottom: 8vh;
     width: 50px;
     opacity: 0.3;
 }
@@ -95,6 +95,8 @@ main #Skills {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 main #Work {
@@ -111,6 +113,56 @@ main #Contact {
     height: 101vh; /*******************************avoid mobile bug**/
 }
 
+
+/*******************************************************GaugeMeters***/
+.containerJauge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: #383838;
+  border: 2px solid #353535;
+}
+
+.containerJauge div {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.containerJauge .jauge {
+  width: 80%;
+  margin: 0 auto;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e1e1e;
+  background-color: #2e2e2e;
+  overflow: hidden;
+}
+
+.jauge .innerJauge {
+  width: 0%;
+  height: inherit;
+}
+
+.innerJauge.Html {
+  background-color: #ED7300;
+}
+
+.innerJauge.Css {
+  background-color: #87C70F;
+}
+
+.innerJauge.Jquery {
+  background-color: #00C9BF;
+}
+
+.innerJauge.Javascript {
+  background-color: #FFA3B5;
+}
 
 /**************************************************nav*/
 
@@ -258,16 +310,52 @@ footer li a:hover {
 }
 
 @media screen and (max-width: 800px) {
+
     .burger {
         display: block;
     }
+
     header .nav {
         display: none;
     }
+
+    #Intro {
+      background: #ED7300;
+      background-image: none !important;
+    }
+
+    .introtext{
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 0px;
+      width: 100%;
+    }
+
+    #Skills {
+      background: #87C70F;
+      background-image: none !important;
+    }
+
+    #Work {
+      background: #00C9BF;
+      background-image: none !important;
+    }
+
+    #Contact {
+      background: #FFA3B5;
+      background-image: none !important;
+    }
+
     #Intro h1{
       font-size: 5em;
     }
+
     #Intro h2{
       font-size: 1.5em;
     }
+
+    footer {
+      font-size: 0.6em;
+    }
+
+
 }

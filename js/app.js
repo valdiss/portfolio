@@ -24,6 +24,10 @@ let colors = ['#ED7300', '#87C70F', '#00C9BF', '#FFA3B5', '#FFBF0F'];
 						$('header li:nth-child(3) a').removeClass('active');
 						$('header li:nth-child(2) a').addClass('active');
 						$('#retour').css("display", "block");
+						$('.innerJauge.Html').animate({width: '90%'}, "slow");
+						$('.innerJauge.Css').animate({width: '90%'}, "slow");
+						$('.innerJauge.Jquery').animate({width: '60%'}, "slow");
+						$('.innerJauge.Javascript').animate({width: '70%'}, "slow");
         }
 				else if($(document).scrollTop() >= $('#Intro').height()*2 && $(document).scrollTop() < $('#Intro').height()*3) {
             $('header li:nth-child(2) a').removeClass('active');
@@ -35,7 +39,6 @@ let colors = ['#ED7300', '#87C70F', '#00C9BF', '#FFA3B5', '#FFBF0F'];
 						$('header li:nth-child(4) a').addClass('active');
         }
     });
-
 
 
     $('a[href^="#"]').click(function() {//**************************************************event click menu
@@ -52,7 +55,6 @@ let colors = ['#ED7300', '#87C70F', '#00C9BF', '#FFA3B5', '#FFBF0F'];
     $("a").mouseup(function() {//**********************************************************erase link focus
         $(this).blur();
     });
-
 
 
 		//*************************************************************************************Random color on VD hover
