@@ -65,7 +65,7 @@ main {
 main #Intro {
     display: flex;
     align-items: center;
-    background-image: url(../img/coffee.jpg);
+    background-image: url(../img/CoffeeShop-13.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -73,8 +73,8 @@ main #Intro {
 
 .introtext {
     margin: 0 auto;
-    width: 500px;
-    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 75%, transparent 100%);
+    width: 700px;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 75%, transparent 100%);
     border-radius: 25px;
     text-align: center;
     color: white;
@@ -91,49 +91,56 @@ h2 {
 }
 
 main #Skills {
-    background-image: url(../img/ground-coffee.jpg);
+    /*background-image: url(../img/ground-coffee.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #87C70F;
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
 main #Work {
-    background-image: url(../img/kettle.jpg);
+    /*background-image: url(../img/kettle.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #00C9BF;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 main #Contact {
-    background-image: url(../img/cup.jpg);
+    /*background-image: url(../img/cup.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #FFA3B5;
     height: 101vh; /*******************************avoid mobile bug**/
+    display: flex;
+    align-items: center;
 }
 
 
 /*******************************************************GaugeMeters***/
-.containerJauge {
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
-  height: 50vh;
+  height: 90vh;
   border-radius: 10px;
   background-color: #383838;
   border: 2px solid #353535;
 }
 
-.containerJauge div {
+.container div {
   flex: 1;
   text-align: center;
   color: white;
 }
 
-.containerJauge .jauge {
+.container .jauge {
   width: 80%;
   margin: 0 auto;
   height: 20px;
@@ -163,6 +170,10 @@ main #Contact {
 .innerJauge.Javascript {
   background-color: #FFA3B5;
 }
+
+
+/*****************************************************Mozaique**/
+
 
 /**************************************************nav*/
 
