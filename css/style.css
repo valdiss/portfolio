@@ -6,14 +6,14 @@
 }
 
 a {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 header {
     position: fixed;
     top: 0;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+    background-color: #222222;
     width: 100%;
     height: 10vh;
     z-index: 5;
@@ -22,15 +22,13 @@ header {
 h3 {
     float: left;
     font-size: 2em;
-    line-height: 100px;
-    text-align: left;
-    padding-left: 40px;
+    line-height: 11vh;
+    padding-left: 4vw;
     margin: 0;
     color: #d2d9d9;
 }
 
 h3:hover {
-    color: #6A4E34;
     cursor: pointer;
 }
 
@@ -40,19 +38,37 @@ header .nav {
     height: inherit;
 }
 
+header.transparent {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+#retour {
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    width: 50px;
+    opacity: 0.3;
+}
+
+#retour:hover {
+    opacity: 1;
+}
 
 /*****************************************************main*/
+
 main {
     height: 400vh;
     margin: 0;
 }
 
-main #intro {
+main #Intro {
+    display: flex;
+    align-items: center;
     background-image: url(../img/coffee.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
-    padding: 350px 0;
 }
 
 .introtext {
@@ -92,8 +108,9 @@ main #Contact {
     background-image: url(../img/cup.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 101vh; /*******************************avoid mobile bug**/
 }
+
 
 /**************************************************nav*/
 
@@ -112,8 +129,6 @@ main #Contact {
     justify-content: center;
 }
 
-
-
 header li a {
     line-height: 10vh;
     font-size: 1.1em;
@@ -127,13 +142,82 @@ header li a {
 header li a:hover {
     color: white;
     text-decoration: none;
-    background: linear-gradient(to bottom, rgba(106, 78, 52, 0.9), transparent);
     transition: 0.2s ease-in-out;
-    border-top: 7px solid black;
+}
+
+header li:first-child a:hover {
+    border-top: 7px solid #ED7300;
+}
+
+header li:first-child a.active {
+    border-top: 7px solid #ED7300;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+header li:nth-child(2) a:hover {
+    border-top: 7px solid #87C70F;
+}
+
+header li:nth-child(2) a.active {
+    border-top: 7px solid #87C70F;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+header li:nth-child(3) a:hover {
+    border-top: 7px solid #00C9BF;
+}
+
+header li:nth-child(3) a.active {
+    border-top: 7px solid #00C9BF;
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+
+header li:nth-child(4) a:hover {
+    border-top: 7px solid #FFA3B5;
+}
+
+header li:nth-child(4) a.active {
+    border-top: 7px solid #FFA3B5;
+    transition: 0.2s ease-in-out;
+    color: white;
 }
 
 header .nav ul {
     justify-content: flex-start;
+}
+
+
+/******************************************************burger*/
+
+.burger {
+    align-self: center;
+    display: none;
+    position: absolute;
+    top: 3vh;
+    right: 1vw;
+    width: 50px;
+    height: 50px;
+    z-index: 6;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.burger:hover span {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.burger span {
+    display: block;
+    margin: 5px auto;
+    width: 60%;
+    height: 5px;
+    background-color: #d2d9d9;
 }
 
 
@@ -164,10 +248,26 @@ footer li a:hover {
 }
 
 @font-face {
-  font-family: "head";
-  src: url("../fonts/Little Kid.woff");
+    font-family: "head";
+    src: url("../fonts/Little Kid.woff");
 }
+
 @font-face {
-  font-family: "base";
-  src: url("../fonts/linowrite.ttf");
+    font-family: "base";
+    src: url("../fonts/linowrite.ttf");
+}
+
+@media screen and (max-width: 800px) {
+    .burger {
+        display: block;
+    }
+    header .nav {
+        display: none;
+    }
+    #Intro h1{
+      font-size: 5em;
+    }
+    #Intro h2{
+      font-size: 1.5em;
+    }
 }
