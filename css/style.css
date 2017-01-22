@@ -95,30 +95,33 @@ main #Skills {
     /*background-image: url(../img/ground-coffee.jpg);
     background-position: center;
     background-size: cover;*/
-    background-color: #87C70F;
+    background-color: #222222;
     height: 100vh;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #ED7300;
 }
 
 main #Work {
     /*background-image: url(../img/kettle.jpg);
     background-position: center;
     background-size: cover;*/
-    background-color: #00C9BF;
+    background-color: #222222;
     height: 100vh;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #87C70F;
 }
 
 main #Contact {
     /*background-image: url(../img/cup.jpg);
     background-position: center;
     background-size: cover;*/
-    background-color: #FFA3B5;
+    background-color: #222222;
     height: 101vh; /*******************************avoid mobile bug**/
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #FFA3B5;
 }
 
 
