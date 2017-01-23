@@ -26,8 +26,13 @@ let colors = ['#ED7300', '#87C70F', '#00C9BF', '#FFA3B5', '#FFBF0F'];
 						$('#retour').css("display", "block");
 						$('.innerJauge.Html').animate({width: '90%'}, "slow");
 						$('.innerJauge.Css').animate({width: '90%'}, "slow");
-						$('.innerJauge.Jquery').animate({width: '60%'}, "slow");
-						$('.innerJauge.Javascript').animate({width: '70%'}, "slow");
+						$('.innerJauge.Jquery').animate({width: '70%'}, "slow");
+						$('.innerJauge.Javascript').animate({width: '80%'}, "slow");
+            $('.innerJauge.Angular').animate({width: '30%'}, "slow");
+            $('.innerJauge.Php').animate({width: '20%'}, "slow");
+            $('.innerJauge.Wordpress').animate({width: '20%'}, "slow");
+            $('.innerJauge.Nodejs').animate({width: '20%'}, "slow");
+            $('.innerJauge.Mysql').animate({width: '20%'}, "slow");
         }
 				else if($(document).scrollTop() >= $('#Intro').height()*2 && $(document).scrollTop() < $('#Intro').height()*3) {
             $('header li:nth-child(2) a').removeClass('active');
