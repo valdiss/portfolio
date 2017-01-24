@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
     <title>Valentin Dissais, web developper</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.1.1.js" charset="utf-8"></script>
+    <script src="js/masonry.pkgd.min.js" charset="utf-8"></script>
+    <script src="js/imagesloaded.pkgd.js" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -37,14 +40,13 @@
         </div>
         <div id="Skills">
             <div class="container">
-              
+
                 <div class="left">
-                  <div class="text">
-                    <h4>HTML5</h4>
-                    <p>
-                      Bonne maitrise du language
-                    </p>
-                  </div>
+                    <div class="text">
+                        <h4>Hover the languages</h4>
+                        <p>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="right">
@@ -126,15 +128,44 @@
         </div>
         <div id="Work">
             <div class="container">
-                <a id="affiche" href="https://valdiss.github.io/affichegit/" target="_blank"><img src="img/projects/affiche.png" alt="" /></a>
-                <a id="roman_photo" href="https://valdiss.github.io/romanphoto/" target="_blank"><img src="img/projects/roman_photo.png" alt="" /></a>
-                <a id="slider" href="https://valdiss.github.io/jquery_slider/" target="_blank"><img src="img/projects/slider.png" alt="" /></a>
-                <a id="animatum" href="https://valdiss.github.io/animatum/" target="_blank"><img src="img/projects/animatum.png" alt="" /></a>
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
+                        <a href="#"><img src="img/projects/affiche.png" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#"><img src="img/projects/mondrian.png" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#"><img src="img/projects/random_pick.png" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#"><img src="img/projects/roman_photo.png" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#"><img src="img/projects/slider.png" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#"><img src="img/projects/animatum.png" /></a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div id="Contact">
             <div class="container">
-
+                <h6>Contact me!</h6>
+                <form class="cf">
+                    <div class="half left cf">
+                        <input type="text" id="input-name" placeholder="Name">
+                        <input type="email" id="input-email" placeholder="Email address">
+                        <input type="text" id="input-subject" placeholder="Subject">
+                    </div>
+                    <div class="half right cf">
+                        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="input-submit">
+                </form>
             </div>
         </div>
 
