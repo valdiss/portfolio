@@ -52,23 +52,17 @@ $(document).ready(function() {
             $('.innerJauge.Mysql').animate({
                 width: '20%'
             }, "slow");
-            $('header.transparent').css("background-color", "rgba(0, 0, 0, 0.3)");
-            $('header a, header h3').css("color", "#d2d9d9");
-            $('.burger span').css("background-color","white");
+
         } else if ($(document).scrollTop() >= $('#Intro').height() * 2 && $(document).scrollTop() < $('#Intro').height() * 3) {
             $('header li:nth-child(2) a').removeClass('active');
             $('header li:nth-child(4) a').removeClass('active');
             $('header li:nth-child(3) a').addClass('active');
-            $('header.transparent').css("background-color", "rgba(255, 255, 255, 0.8)");
-            $('header a, header h3').css("color", "#222222");
-            $('.burger span').css("background-color","black");
+
         } else if ($(document).scrollTop() >= $('#Intro').height() * 3) {
             $('header li:nth-child(3) a').removeClass('active');
             $('header li:nth-child(4) a').addClass('active');
-            $('header.transparent').css("background-color", "rgba(0, 0, 0, 0.3)");
-            $('header a, header h3').css("color", "#d2d9d9");
-            $('.burger span').css("background-color","white");
         }
+
     });
 
 
@@ -108,7 +102,19 @@ $(document).ready(function() {
         $('.burger span').css('background-color', '#d2d9d9');
     });
 
+    if ($(window).width() <= 800) {
+      $('.burger').click(function(){
+        $('header .nav').toggleClass("visible");
+        $('body').toggleClass("overflow");
+      });
 
+      $('header .nav a').click(function(){
+        $('header .nav').toggleClass("visible");
+        $('body').toggleClass("overflow");
+      });
+    }
+
+    //*************************************************************************************Skills display
     $('.html5').mouseenter(function(){
       $('.text h4').hide().html('HTML5 Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
