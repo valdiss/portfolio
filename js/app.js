@@ -8,6 +8,21 @@ $(document).ready(function() {
         $grid.masonry('layout');
     });
 
+    if ($(window).width() <= 800) {
+
+      $('.burger').click(function(){
+        $('header .nav').toggleClass("visible");
+        $(this).toggleClass('cross');
+        $('body').toggleClass("overflow");
+      });
+
+      $('header .nav a').click(function(){
+        $('header .nav').toggleClass("visible");
+        $('header .burger').removeClass('cross');
+        $('body').toggleClass("overflow");
+      });
+    }
+
 
 
     $(window).scroll(function() { //************************************************************event scoll menu
@@ -102,17 +117,7 @@ $(document).ready(function() {
         $('.burger span').css('background-color', '#d2d9d9');
     });
 
-    if ($(window).width() <= 800) {
-      $('.burger').click(function(){
-        $('header .nav').toggleClass("visible");
-        $('body').toggleClass("overflow");
-      });
 
-      $('header .nav a').click(function(){
-        $('header .nav').toggleClass("visible");
-        $('body').toggleClass("overflow");
-      });
-    }
 
     //*************************************************************************************Skills display
     $('.html5').mouseenter(function(){
@@ -136,7 +141,7 @@ $(document).ready(function() {
     $('.javascript').mouseenter(function(){
       $('.text h4').hide().html('Javascript ES6 Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Learned before Jquery, directly from ES6, good understanding of Fundamentals and more, Codewars rank : 5kyu.').fadeIn();
+      $('.text p').hide().html('Learned before Jquery, directly from ES6, good understanding of Fundamentals and more, <br> Codewars rank : 5kyu.').fadeIn();
     });
 
     $('.angular').mouseenter(function(){
@@ -149,6 +154,25 @@ $(document).ready(function() {
       $('.text h4').hide().html('Back-End Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
       $('.text p').hide().html('Beginner, currently learning.').fadeIn();
+    });
+
+    //***********************************************************************************About_me
+    $('.general').mouseenter(function(){
+      $('#About_me .right h5').hide().html('About me').fadeIn();
+      $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
+      $('#About_me .right p').hide().html('I am a 28 years-old web developper, currently learning at SIMPLonMARS in L\'ecole Centrale de Marseille.<br> As you can see I am not particularly good in web design but I\'m doing my best to get better. <br><br> I started learning web developpement on my own but wanted a more academic environnement to progress faster, <br><br> this is when I applied for SIMPLonMARS <br><br> I\'ve been selected amongst 100+ candidates. I\'m currently learning there. <br><br> I am a Junior , yet extremely motivated , web developper!').fadeIn();
+    });
+
+    $('.past').mouseenter(function(){
+      $('#About_me .right h5').hide().html('Past Experiences').fadeIn();
+      $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
+      $('#About_me .right p').hide().html('Nothing related to web developpement but I have a bachelor\'s degree in English and Japanese languages.<br><br> Between January 2013 and August 2016 I worked in an organic shop, as asssistant manager for the last year. <br><br> I\'ve also been volunteering in Scotland for two months in the past two years for a total of 4 months, this experience improved my understanding of english language.').fadeIn();
+    });
+
+    $('.languages').mouseenter(function(){
+      $('#About_me .right h5').hide().html('Spoken Languages').fadeIn();
+      $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
+      $('#About_me .right p').hide().html('French is my mother tongue but I am comfortable with english, <br><br> I still am a begginner in japanese.').fadeIn();
     });
 
 });
