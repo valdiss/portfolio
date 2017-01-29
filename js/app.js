@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let colors = ['#ED7300', '#87C70F', '#00C9BF', '#FFA3B5', '#FFBF0F', '#663382'];
+    let colors = ['#ED7300', '#87C70F', '#00C9BF', '#FFA3B5', '#FFBF0F'];
 
     // init Masonry
     var $grid = $('.grid').masonry({});
@@ -8,34 +8,20 @@ $(document).ready(function() {
         $grid.masonry('layout');
     });
 
-    if ($(window).width() <= 800) {
-
-      $('.burger').click(function(){
-        $('header .nav').toggleClass("visible");
-        $(this).toggleClass('cross');
-        $('body').toggleClass("overflow");
-      });
-
-      $('header .nav a').click(function(){
-        $('header .nav').toggleClass("visible");
-        $('header .burger').removeClass('cross');
-        $('body').toggleClass("overflow");
-      });
-    }
-
 
 
     $(window).scroll(function() { //************************************************************event scoll menu
 
         if ($(document).scrollTop() == 0) {
             $('header').toggleClass('transparent');
-        } else if ($(document).scrollTop() > 0 && $(document).scrollTop() < $('#Intro').height()) {
+
+        } else if ($(document).scrollTop() > 0 && $(document).scrollTop() < $('#Home').height()) {
             $('header').addClass('transparent');
             $('header li:first-child a').addClass('active');
             $('header li:nth-child(2) a').removeClass('active');
             $('#retour').css("display", "none");
             $('header.transparent').css("background-color", "rgba(0, 0, 0, 0.2)");
-        } else if ($(document).scrollTop() >= $('#Intro').height() && $(document).scrollTop() < $('#Intro').height() * 2) {
+        } else if ($(document).scrollTop() >= $('#Home').height() && $(document).scrollTop() < $('#Home').height() * 2) {
             $('header li:first-child a').removeClass('active');
             $('header li:nth-child(3) a').removeClass('active');
             $('header li:nth-child(2) a').addClass('active');
@@ -68,12 +54,12 @@ $(document).ready(function() {
                 width: '20%'
             }, "slow");
 
-        } else if ($(document).scrollTop() >= $('#Intro').height() * 2 && $(document).scrollTop() < $('#Intro').height() * 3) {
+        } else if ($(document).scrollTop() >= $('#Home').height() * 2 && $(document).scrollTop() < $('#Home').height() * 3) {
             $('header li:nth-child(2) a').removeClass('active');
             $('header li:nth-child(4) a').removeClass('active');
             $('header li:nth-child(3) a').addClass('active');
 
-        } else if ($(document).scrollTop() >= $('#Intro').height() * 3) {
+        } else if ($(document).scrollTop() >= $('#Home').height() * 3) {
             $('header li:nth-child(3) a').removeClass('active');
             $('header li:nth-child(4) a').addClass('active');
         }
@@ -117,13 +103,27 @@ $(document).ready(function() {
         $('.burger span').css('background-color', '#d2d9d9');
     });
 
+    if ($(window).width() <= 800) {
+
+      $('.burger').click(function(){
+        $('header .nav').toggleClass("visible");
+        $(this).toggleClass('cross');
+        $('body').toggleClass("overflow");
+      });
+
+      $('header .nav a').click(function(){
+        $('header .nav').toggleClass("visible");
+        $('header .burger').removeClass('cross');
+        $('body').toggleClass("overflow");
+      });
+    }
 
 
     //*************************************************************************************Skills display
     $('.html5').mouseenter(function(){
       $('.text h4').hide().html('HTML5 Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Good overall knowledge of html5 elements, pretty easy language to learn.').fadeIn();
+      $('.text p').hide().html('Good overall knowledge of html5 elements.').fadeIn();
     });
 
     $('.css3').mouseenter(function(){

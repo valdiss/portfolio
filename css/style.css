@@ -76,7 +76,7 @@ main {
     margin: 0;
 }
 
-main #Intro {
+main #Home {
     display: flex;
     align-items: center;
     background-image: url(../img/notebook-light.jpg);
@@ -585,6 +585,12 @@ footer li a:hover {
     header .nav ul a {
         width: 80%;
         height: 12vh;
+        line-height: 12vh;
+    }
+
+    header .nav li a.active {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 5px;
     }
 
     .introtext {
@@ -592,10 +598,10 @@ footer li a:hover {
         border-radius: 0px;
         width: 100%;
     }
-    #Intro h1 {
+    #Home h1 {
         font-size: 5em;
     }
-    #Intro h2 {
+    #Home h2 {
         font-size: 1.5em;
     }
     #Skills h4 {
@@ -660,10 +666,4 @@ footer li a:hover {
     footer {
         font-size: 2vw;
     }
-}
-
-@media all and (min-width: 800px){
-   header .burger{
-       display : none;
-   }
 }
