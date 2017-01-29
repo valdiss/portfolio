@@ -26,6 +26,7 @@ $(document).ready(function() {
             $('header li:nth-child(3) a').removeClass('active');
             $('header li:nth-child(2) a').addClass('active');
             $('#retour').css("display", "block");
+            
             $('.innerJauge.Html').animate({
                 width: '90%'
             }, "slow");
