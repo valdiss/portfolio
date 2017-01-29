@@ -60,7 +60,6 @@ header.transparent {
     bottom: 8vh;
     width: 50px;
     opacity: 0.3;
-    transition: display 1s;
 }
 
 #retour:hover {
@@ -135,7 +134,6 @@ main #Work {
 main #About_me {
     background-color: #222222;
     height: 100vh;
-    /*******************************avoid mobile bug**/
     display: flex;
     align-items: center;
     border-bottom: 4px solid #FFA3B5;
@@ -253,10 +251,9 @@ main #About_me {
 #Work .container a {
     position: relative;
     display: block;
-    padding: 0;
     overflow: hidden;
     float: left;
-    text-align: center;
+    z-index: 3;
 }
 
 #Work .container img {
@@ -266,9 +263,7 @@ main #About_me {
 }
 
 #Work .container img:hover {
-    opacity: 0.3;
-    transform: rotate(-30deg) scale(2);
-    transition: 2s;
+
 }
 
 #affiche:hover {
@@ -290,14 +285,14 @@ main #About_me {
 
 /* ---- grid ---- */
 
-#work .grid {
+#Work .grid {
     background: #383838;
 }
 
 
 /* clear fix */
 
-.grid:after {
+#Work .grid:after {
     content: '';
     display: block;
     clear: both;
@@ -306,19 +301,50 @@ main #About_me {
 
 /* ---- .grid-item ---- */
 
-.grid-sizer, .grid-item {
-    width: 33%;
+#Work .grid-sizer, .grid-item {
+    width: 33.33%;
 }
 
-.grid-item {
+#Work .grid-item {
     float: left;
 }
 
-.grid-item img {
+#Work .grid-item img {
     display: block;
     max-width: 100%;
 }
 
+#Work .grid-item div {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#Work .container .grid-item:hover img {
+    opacity: 0.2;
+    transform: rotate(-15deg) scale(2);
+    transition: 1s;
+}
+
+#Work .grid-item div h5 {
+    font-size: 2.5em;
+    display: none;
+}
+
+#Work .container .grid-item:hover h5 {
+    display: flex;
+    transition: 2s;
+}
+
+#Work .container .grid-item:hover div {
+    background-color: rgba(0, 201, 191, 0.5);
+    transition: 2s;
+}
 
 /**************************************************nav*/
 
@@ -565,7 +591,7 @@ footer li a:hover {
         position: absolute;
         display: block;
         z-index: 7;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
         transform: translateX(0px);
         transition: transform 0.5s;
     }
@@ -629,8 +655,13 @@ footer li a:hover {
         margin-bottom: 4vh;
     }
 
-    .grid-sizer, .grid-item {
+    #Work .grid-sizer, .grid-item {
+        box-sizing: border-box;
         width: 50%;
+    }
+
+    #Work .grid-item div h5 {
+        font-size: 1.5em;
     }
 
     #About_me .container {
