@@ -290,7 +290,7 @@ main #About_me {
 
 /* ---- grid ---- */
 
-.grid {
+#work .grid {
     background: #383838;
 }
 
@@ -556,6 +556,7 @@ footer li a:hover {
     }
 
     header .nav {
+        background-color: black;
         transform: translateX(-1000px);
         transition: transform 0.5s;
     }
