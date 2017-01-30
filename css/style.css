@@ -21,14 +21,14 @@ header {
     color: #d2d9d9;
     background-color: #222222;
     width: 100%;
-    height: 12vh;
+    height: 8vh;
     z-index: 5;
 }
 
 h3 {
     float: left;
     font-size: 2em;
-    line-height: 13vh;
+    line-height: 9vh;
     padding-left: 4vw;
     margin: 0;
     color: #d2d9d9;
@@ -328,7 +328,7 @@ main #Contact {
 }
 
 header li a {
-    line-height: 12vh;
+    line-height: 9vh;
     font-size: 1.1em;
     width: 80px;
     height: inherit;
@@ -343,41 +343,41 @@ header li a:hover {
 }
 
 header li:first-child a:hover {
-    border-top: 7px solid #ED7300;
+    border-top: 5px solid #ED7300;
 }
 
 header li:first-child a.active {
-    border-top: 7px solid #ED7300;
+    border-top: 5px solid #ED7300;
     transition: 0.2s ease-in-out;
     color: white;
 }
 
 header li:nth-child(2) a:hover {
-    border-top: 7px solid #87C70F;
+    border-top: 5px solid #87C70F;
 }
 
 header li:nth-child(2) a.active {
-    border-top: 7px solid #87C70F;
+    border-top: 5px solid #87C70F;
     transition: 0.2s ease-in-out;
     color: white;
 }
 
 header li:nth-child(3) a:hover {
-    border-top: 7px solid #00C9BF;
+    border-top: 5px solid #00C9BF;
 }
 
 header li:nth-child(3) a.active {
-    border-top: 7px solid #00C9BF;
+    border-top: 5px solid #00C9BF;
     transition: 0.2s ease-in-out;
     color: white;
 }
 
 header li:nth-child(4) a:hover {
-    border-top: 7px solid #FFA3B5;
+    border-top: 5px solid #FFA3B5;
 }
 
 header li:nth-child(4) a.active {
-    border-top: 7px solid #FFA3B5;
+    border-top: 5px solid #FFA3B5;
     transition: 0.2s ease-in-out;
     color: white;
 }
