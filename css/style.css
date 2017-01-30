@@ -5,6 +5,10 @@
     font-family: base;
 }
 
+body.overflow {
+    overflow: hidden;
+}
+
 a {
     cursor: pointer;
     color: #d2d9d9;
@@ -21,14 +25,14 @@ header {
     color: #d2d9d9;
     background-color: #222222;
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     z-index: 5;
 }
 
 h3 {
     float: left;
     font-size: 2em;
-    line-height: 9vh;
+    line-height: 8vh;
     padding-left: 4vw;
     margin: 0;
     color: #d2d9d9;
@@ -56,13 +60,12 @@ header.transparent {
     bottom: 8vh;
     width: 50px;
     opacity: 0.3;
-    transition: display 1s;
-    z-index: 10;
 }
 
 #retour:hover {
     opacity: 1;
 }
+
 
 /*****************************************************main*/
 
@@ -71,13 +74,14 @@ main {
     margin: 0;
 }
 
-main #Intro {
+main #Home {
     display: flex;
     align-items: center;
-    background-image: url(../img/notebook.jpg);
+    background-image: url(../img/notebook-light.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
+    border-bottom: 4px solid #ED7300;
 }
 
 .introtext {
@@ -97,8 +101,6 @@ h2 {
     font-family: base;
     font-size: 2.5em;
 }
-
-
 
 main #Skills {
     background-color: #222222;
@@ -129,9 +131,9 @@ main #Work {
     border-bottom: 4px solid #00C9BF;
 }
 
-main #Contact {
+main #About_me {
     background-color: #222222;
-    height: 100vh; /*******************************avoid mobile bug**/
+    height: 100vh;
     display: flex;
     align-items: center;
     border-bottom: 4px solid #FFA3B5;
@@ -139,175 +141,209 @@ main #Contact {
 
 
 /*******************************************************GaugeMeters***/
+
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
-  margin: 0 auto;
-  height: 90vh;
-  border-radius: 10px;
-  background-color: #383838;
-  border: 2px solid #353535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 85vh;
+    background-color: #383838;
+    border: 2px solid #353535;
 }
 
 #Skills .back {
-  border-left: 1px solid black;
+    border-left: 1px solid black;
 }
 
 #Skills .left {
-  display: flex;
-  align-items: center;
-  height: 60vh;
-  border-radius: 10px;
-  background-color: #222222;
-  border: 2px solid #353535;
-  padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: #222222;
+    border: 2px solid #353535;
+    padding: 20px;
 }
 
 #Skills .right {
-  display: flex;
-
+    display: flex;
 }
 
 .container div {
-  flex: 1;
-  text-align: center;
-  color: white;
+    flex: 1;
+    text-align: center;
+    color: white;
 }
 
 #Skills h4, #Skills .container .right .front div, #Skills .container .right .back div {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 #Skills .text h4 {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 #Skills .text p {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .container .jauge {
-  width: 80%;
-  margin: 0 auto;
-  height: 25px;
-  border-radius: 10px;
-  border: 1px solid #1e1e1e;
-  background-color: #2e2e2e;
-  overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #1e1e1e;
+    background-color: #2e2e2e;
+    overflow: hidden;
 }
 
 .jauge .innerJauge {
-  width: 0%;
-  height: inherit;
+    width: 0%;
+    height: inherit;
 }
 
 .innerJauge.Html {
-  background-color: #ED7300;
+    background-color: #ED7300;
 }
 
 .innerJauge.Css {
-  background-color: #87C70F;
+    background-color: #87C70F;
 }
 
 .innerJauge.Jquery {
-  background-color: #00C9BF;
+    background-color: #00C9BF;
 }
 
 .innerJauge.Javascript {
-  background-color: #FFA3B5;
+    background-color: #FFA3B5;
 }
 
 .innerJauge.Angular {
-  background-color: #663382;
+    background-color: #663382;
 }
 
 .innerJauge.Wordpress {
-  background-color: #FFBF0F;
+    background-color: #FFBF0F;
 }
 
 .innerJauge.Php {
-  background-color: #3D8CDE;
+    background-color: #3D8CDE;
 }
 
 .innerJauge.Nodejs {
-  background-color: #ED1C0D;
+    background-color: #ED1C0D;
 }
 
 .innerJauge.Mysql {
-  background-color: #4caf50;
+    background-color: #4caf50;
 }
+
 
 /*****************************************************Mozaique**/
+
 #Work .container {
-  padding: 0;
-  overflow: hidden;
+    padding: 0;
+    overflow: hidden;
 }
 
-.container a {
-  position: relative;
-  display: block;
-  padding: 0;
-  overflow:hidden;
-  float: left;
-  text-align: center;
+#Work .container a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    float: left;
+    z-index: 3;
 }
 
-.container img {
-  margin: 0;
-  cursor: pointer;
-  transition: 0.5s;
+#Work .container img {
+    margin: 0;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.container img:hover{
-  opacity: 0.3;
-  transform: rotate(-30deg) scale(2);
-  transition: 2s;
+#Work .container img:hover {
+
 }
 
 #affiche:hover {
-  background-color: #ED7300;
+    background-color: #ED7300;
 }
 
 #roman_photo:hover {
-  background-color: #87C70F;
+    background-color: #87C70F;
 }
 
 #slider:hover {
-  background-color: #00C9BF;
+    background-color: #00C9BF;
 }
 
 #animatum:hover {
-  background-color: #FFA3B5;
+    background-color: #FFA3B5;
 }
+
+
 /* ---- grid ---- */
 
-.grid {
-  background: #383838;
+#Work .grid {
+    background: #383838;
 }
 
+
 /* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+
+#Work .grid:after {
+    content: '';
+    display: block;
+    clear: both;
 }
+
 
 /* ---- .grid-item ---- */
 
-.grid-sizer,
-.grid-item {
-  width: 33.33%;
+#Work .grid-sizer, .grid-item {
+    width: 33.33%;
 }
 
-.grid-item {
-  float: left;
+#Work .grid-item {
+    float: left;
 }
 
-.grid-item img {
-  display: block;
-  max-width: 100%;
+#Work .grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+#Work .grid-item div {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#Work .container .grid-item:hover img {
+    opacity: 0.2;
+    transform: rotate(-15deg) scale(2);
+    transition: 1s;
+}
+
+#Work .grid-item div h5 {
+    font-size: 2.5em;
+    display: none;
+}
+
+#Work .container .grid-item:hover h5 {
+    display: flex;
+    transition: 2s;
+}
+
+#Work .container .grid-item:hover div {
+    background-color: rgba(0, 201, 191, 0.5);
+    transition: 2s;
 }
 
 /**************************************************nav*/
@@ -328,7 +364,7 @@ main #Contact {
 }
 
 header li a {
-    line-height: 9vh;
+    line-height: 7vh;
     font-size: 1.1em;
     width: 80px;
     height: inherit;
@@ -393,7 +429,7 @@ header .nav ul {
     align-self: center;
     display: none;
     position: absolute;
-    top: 3vh;
+    top: 1vh;
     right: 1vw;
     width: 50px;
     height: 50px;
@@ -409,6 +445,16 @@ header .nav ul {
     transition: 0.2s ease-in-out;
 }
 
+.burger.cross span:first-child {
+    transform: rotateZ(45deg) translateY(10px) translateX(10px);
+}
+.burger.cross span:nth-child(2) {
+    opacity: 0;
+}
+.burger.cross span:last-child {
+    transform: rotate(-45deg) translateY(-5px) translateX(4px);
+}
+
 .burger span {
     display: block;
     margin: 5px auto;
@@ -416,69 +462,68 @@ header .nav ul {
     height: 5px;
     background-color: #d2d9d9;
 }
-/******************************************************ContactForm**/
-#Contact .container{
-  display: block;
+
+
+/******************************************************About_me**/
+#About_me .left {
+    display: flex;
+}
+#About_me .l-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-left: 1vw;
 }
 
-h6 {
-  text-align: center;
-  color: #d2d9d9;
-  font-size: 3em;
-  margin-top: 20%;
-
+#About_me .l-right div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-form {
-  max-width: 600px;
-  text-align: center;
-  margin: 20px auto;
+#About_me .l-right div:hover {
+    background-color: #353535;
+    transition: 0.5s;
+    border-radius: 10px;
 }
 
-form input, form textarea {
-  border: 0;
-  outline: 0;
-  padding: 1em;
-  border-radius: 8px;
-  display: block;
-  width: 100%;
-  margin-top: 1em;
-  resize: none;
-  color: black;
+#About_me img {
+    margin: 0 auto;
 }
 
-form input:focus, form textarea:focus {
-  box-shadow: 0 0px 2px #ffa3b5 !important;
+#About_me h5{
+    font-size: 1.5em;
+}
+#About_me p{
+    font-size: 1.1em;
 }
 
-form #input-submit {
-  color: white;
-  background: #ffa3b5;
-  cursor: pointer;
+#About_me .left {
+    height: 50vh;
+    border-radius: 10px;
+    background-color: #222222;
+    border: 2px solid #353535;
+    padding: 20px;
 }
 
-form #input-submit:hover {
-  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
-  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+#About_me .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
-form textarea {
-  height: 126px;
+#About_me .right h5, #About_me .right p {
+    display: block;
+    width: 75%;
 }
 
-#Contact .half {
-  float: left;
-  width: 48%;
-  margin-bottom: 1em;
-}
-
-#Contact .right {
-  width: 50%;
-}
-
-#Contact .left {
-  margin-right: 2%;
+#About_me .right h5 {
+    margin-bottom: 40px;
 }
 
 
@@ -509,15 +554,15 @@ footer li a:hover {
 }
 
 #linkedin:hover {
-  color : #ED7300 ;
+    color: #ED7300;
 }
 
 #github:hover {
-  color : #87C70F ;
+    color: #87C70F;
 }
 
 #mail:hover {
-  color : #00C9BF ;
+    color: #00C9BF;
 }
 
 @font-face {
@@ -530,62 +575,128 @@ footer li a:hover {
     src: url("../fonts/linowrite.ttf");
 }
 
-@media screen and (max-width: 800px) {
-
-    .burger {
+@media all and (max-width: 800px) {
+    header .burger {
         display: block;
+        z-index: 7;
     }
 
     header .nav {
-        display: none;
+        background-color: black;
+        transform: translateX(-1000px);
+        transition: transform 0.5s;
     }
 
-    .container {
-      width: 100%;
+    header .nav.visible {
+        position: absolute;
+        display: block;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        transform: translateX(0px);
+        transition: transform 0.5s;
     }
 
-    .introtext{
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 0px;
-      width: 100%;
+    header .nav {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+
     }
 
-    #Intro h1{
-      font-size: 5em;
+    header .nav ul {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
     }
 
-    #Intro h2{
-      font-size: 1.5em;
+    header .nav ul a {
+        width: 80%;
+        height: 12vh;
+        line-height: 11vh;
     }
 
-    #Skills h4{
-      font-size: 0.8em;
+    header .nav li a.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-bottom: 5px;
     }
 
+    .introtext {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 0px;
+        width: 100%;
+    }
+    #Home h1 {
+        font-size: 5em;
+    }
+    #Home h2 {
+        font-size: 1.5em;
+    }
+    #Skills h4 {
+        font-size: 3.5vw;
+    }
+    #Skills .text h4 {
+        font-size: 4.5vw;
+    }
     #Skills h5 {
-      font-size: 0.7em;
+        font-size: 2.5vw;
     }
-
+    #Skills .text p{
+        font-size: 3.5vw;
+    }
     #Skills .left {
-      height: 50vh;
+        height: 50vh;
     }
-
     #Skills .jauge {
-      height: 18px;
+        height: 18px;
     }
 
-    #Contact h6 {
-      margin-top: 40%;
+    #Skills h4, #Skills .container .right .front div, #Skills .container .right .back div {
+        margin-bottom: 4vh;
     }
 
-    .grid-sizer,
-    .grid-item {
-      width: 50%;
+    #Work .grid-sizer, .grid-item {
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    #Work .grid-item div h5 {
+        font-size: 1.5em;
+    }
+
+    #About_me .container {
+      flex-direction: column;
+    }
+
+    #About_me .left {
+      width: 100%;
+    }
+
+    #About_me .right h5 {
+      margin-bottom: 5px;
+    }
+
+    #About_me .right p{
+      width: 100%;
+    }
+
+    #About_me img {
+      display: none;
+    }
+
+    #About_me h5 {
+      font-size: 4.5vw;
+    }
+
+    #About_me p {
+      font-size: 3vw;
+    }
+
+    #retour {
+        width: 10vw;
     }
 
     footer {
-      font-size: 2vw;
+        font-size: 2vw;
     }
-
-
 }
