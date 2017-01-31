@@ -26,7 +26,7 @@ $(document).ready(function() {
             $('header li:nth-child(3) a').removeClass('active');
             $('header li:nth-child(2) a').addClass('active');
             $('#retour').css("display", "block");
-            
+
             $('.innerJauge.Html').animate({
                 width: '90%'
             }, "slow");
@@ -124,37 +124,55 @@ $(document).ready(function() {
     $('.html5').mouseenter(function(){
       $('.text h4').hide().html('HTML5 Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Good overall knowledge of html5 elements.').fadeIn();
+      $('.text p').typed({
+        strings: ['Good overall knowledge of Html5 elements.'],
+        typeSpeed:0
+      });
     });
 
     $('.css3').mouseenter(function(){
       $('.text h4').hide().html('Css3 Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Good overall knowledge of Css3 selectors and pseudo-selectors.').fadeIn();
+      $('.text p').typed({
+        strings: ['Good overall knowledge of Css3 selectors and pseudo-selectors.'],
+        typeSpeed:0
+      });
     });
 
     $('.jquery').mouseenter(function(){
       $('.text h4').hide().html('Jquery Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Good understanding of Jquery equivalents to Javascript Vanilla.').fadeIn();
+      $('.text p').typed({
+        strings: ['Good understanding of Jquery equivalents to Javascript Vanilla.'],
+        typeSpeed:0
+      });
     });
 
     $('.javascript').mouseenter(function(){
       $('.text h4').hide().html('Javascript ES6 Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Learned before Jquery, directly from ES6, good understanding of Fundamentals and more, <br> Codewars rank : 5kyu.').fadeIn();
+      $('.text p').typed({
+        strings: ['Learned before Jquery, directly from ES6, good understanding of Fundamentals and more, <br> Codewars rank : 5kyu.'],
+        typeSpeed:0
+      });
     });
 
     $('.angular').mouseenter(function(){
       $('.text h4').hide().html('AngularJS Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Beginner but understands the logic behind, learning AngularJS 1.6.').fadeIn();
+      $('.text p').typed({
+        strings: ['Beginner but understands the logic behind, learning AngularJS 1.6.'],
+        typeSpeed:0
+      });
     });
 
     $('.back').mouseenter(function(){
       $('.text h4').hide().html('Back-End Skills').fadeIn();
       $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-      $('.text p').hide().html('Beginner, currently learning.').fadeIn();
+      $('.text p').typed({
+        strings: ['Beginner, currently learning.'],
+        typeSpeed:0
+      });
     });
 
     //***********************************************************************************About_me
