@@ -379,41 +379,41 @@ header li a:hover {
 }
 
 header li:first-child a:hover {
-    border-top: 7px solid #ED7300;
+    border-top: 5px solid #ED7300;
 }
 
 header li:first-child a.active {
-    border-top: 7px solid #ED7300;
+    border-top: 5px solid #ED7300;
     transition: 0.2s ease-in-out;
     color: white;
 }
 
 header li:nth-child(2) a:hover {
-    border-top: 7px solid #87C70F;
+    border-top: 5px solid #87C70F;
 }
 
 header li:nth-child(2) a.active {
-    border-top: 7px solid #87C70F;
+    border-top: 5px solid #87C70F;
     transition: 0.2s ease-in-out;
     color: white;
 }
 
 header li:nth-child(3) a:hover {
-    border-top: 7px solid #00C9BF;
+    border-top: 5px solid #00C9BF;
 }
 
 header li:nth-child(3) a.active {
-    border-top: 7px solid #00C9BF;
+    border-top: 5px solid #00C9BF;
     transition: 0.2s ease-in-out;
     color: white;
 }
 
 header li:nth-child(4) a:hover {
-    border-top: 7px solid #FFA3B5;
+    border-top: 5px solid #FFA3B5;
 }
 
 header li:nth-child(4) a.active {
-    border-top: 7px solid #FFA3B5;
+    border-top: 5px solid #FFA3B5;
     transition: 0.2s ease-in-out;
     color: white;
 }
