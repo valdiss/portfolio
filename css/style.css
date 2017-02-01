@@ -189,6 +189,10 @@ main #About_me {
     font-size: 1.2em;
 }
 
+.typed-cursor{
+    display: none;
+}
+
 .container .jauge {
     width: 80%;
     margin: 0 auto;
@@ -495,10 +499,10 @@ header .nav ul {
 }
 
 #About_me h5{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 #About_me p{
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 #About_me .left {
