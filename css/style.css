@@ -25,7 +25,7 @@ header {
     color: #d2d9d9;
     background-color: #222222;
     width: 100%;
-    height: 7vh;
+    height: 7%;
     z-index: 5;
 }
 
@@ -33,7 +33,7 @@ h3 {
     float: left;
     font-size: 2em;
     line-height: 8vh;
-    padding-left: 4vw;
+    padding-left: 4%;
     margin: 0;
     color: #d2d9d9;
 }
@@ -56,8 +56,8 @@ header.transparent {
 #retour {
     display: none;
     position: fixed;
-    right: 5vw;
-    bottom: 8vh;
+    right: 5%;
+    bottom: 8%;
     width: 50px;
     opacity: 0.3;
 }
@@ -264,10 +264,6 @@ main #About_me {
     margin: 0;
     cursor: pointer;
     transition: 0.5s;
-}
-
-#Work .container img:hover {
-
 }
 
 #affiche:hover {
@@ -506,7 +502,7 @@ header .nav ul {
 }
 
 #About_me .left {
-    height: 50vh;
+    height: 60%;
     border-radius: 10px;
     background-color: #222222;
     border: 2px solid #353535;
@@ -537,7 +533,7 @@ footer {
     position: fixed;
     text-align: center;
     bottom: 0;
-    height: 4vh;
+    height: 3.5%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
