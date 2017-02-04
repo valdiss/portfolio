@@ -193,55 +193,8 @@ main #About_me {
     display: none;
 }
 
-.container .jauge {
-    width: 80%;
-    margin: 0 auto;
-    height: 25px;
-    border-radius: 10px;
-    border: 1px solid #1e1e1e;
-    background-color: #2e2e2e;
-    overflow: hidden;
-}
-
-.jauge .innerJauge {
-    width: 0%;
-    height: inherit;
-}
-
-.innerJauge.Html {
-    background-color: #ED7300;
-}
-
-.innerJauge.Css {
-    background-color: #87C70F;
-}
-
-.innerJauge.Jquery {
-    background-color: #00C9BF;
-}
-
-.innerJauge.Javascript {
-    background-color: #FFA3B5;
-}
-
-.innerJauge.Angular {
-    background-color: #663382;
-}
-
-.innerJauge.Wordpress {
-    background-color: #FFBF0F;
-}
-
-.innerJauge.Php {
-    background-color: #3D8CDE;
-}
-
-.innerJauge.Nodejs {
-    background-color: #ED1C0D;
-}
-
-.innerJauge.Mysql {
-    background-color: #4caf50;
+#Skills i {
+    font-size: 4em;
 }
 
 
@@ -637,21 +590,20 @@ footer li a:hover {
     #Skills .text h4 {
         font-size: 4.5vw;
     }
-    #Skills h5 {
-        font-size: 2.5vw;
-    }
+
     #Skills .text p{
         font-size: 3.5vw;
     }
     #Skills .left {
         height: 50vh;
     }
-    #Skills .jauge {
-        height: 18px;
-    }
 
     #Skills h4, #Skills .container .right .front div, #Skills .container .right .back div {
         margin-bottom: 4vh;
+    }
+
+    #Skills i {
+      font-size: 3em;
     }
 
     #Work .grid-sizer, .grid-item {

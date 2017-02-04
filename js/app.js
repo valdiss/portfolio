@@ -26,33 +26,33 @@ $(document).ready(function() {
             $('header li:nth-child(2) a').addClass('active');
             $('#retour').css("display", "block");
 
-            $('.innerJauge.Html').animate({
-                width: '90%'
-            }, "slow");
-            $('.innerJauge.Css').animate({
-                width: '90%'
-            }, "slow");
-            $('.innerJauge.Jquery').animate({
-                width: '70%'
-            }, "slow");
-            $('.innerJauge.Javascript').animate({
-                width: '80%'
-            }, "slow");
-            $('.innerJauge.Angular').animate({
-                width: '30%'
-            }, "slow");
-            $('.innerJauge.Php').animate({
-                width: '20%'
-            }, "slow");
-            $('.innerJauge.Wordpress').animate({
-                width: '20%'
-            }, "slow");
-            $('.innerJauge.Nodejs').animate({
-                width: '20%'
-            }, "slow");
-            $('.innerJauge.Mysql').animate({
-                width: '20%'
-            }, "slow");
+            // $('.innerJauge.Html').animate({
+            //     width: '90%'
+            // }, "slow");
+            // $('.innerJauge.Css').animate({
+            //     width: '90%'
+            // }, "slow");
+            // $('.innerJauge.Jquery').animate({
+            //     width: '70%'
+            // }, "slow");
+            // $('.innerJauge.Javascript').animate({
+            //     width: '80%'
+            // }, "slow");
+            // $('.innerJauge.Angular').animate({
+            //     width: '30%'
+            // }, "slow");
+            // $('.innerJauge.Php').animate({
+            //     width: '20%'
+            // }, "slow");
+            // $('.innerJauge.Wordpress').animate({
+            //     width: '20%'
+            // }, "slow");
+            // $('.innerJauge.Nodejs').animate({
+            //     width: '20%'
+            // }, "slow");
+            // $('.innerJauge.Mysql').animate({
+            //     width: '20%'
+            // }, "slow");
 
         } else if ($(document).scrollTop() >= $('#Home').height() * 2 && $(document).scrollTop() < $('#Home').height() * 3) {
             $('header li:nth-child(2) a').removeClass('active');
