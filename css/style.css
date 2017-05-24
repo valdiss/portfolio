@@ -255,7 +255,7 @@ main #About_me {
 /* ---- .grid-item ---- */
 
 #Work .grid-sizer, .grid-item {
-    width: 33.33%;
+    width: 25%;
 }
 
 #Work .grid-item {
