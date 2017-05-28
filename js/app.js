@@ -80,90 +80,138 @@ $(document).ready(function() {
         $('.burger').click(function() {
             $('header .nav').toggleClass("visible");
             $(this).toggleClass('cross');
-            $('body').toggleClass("overflow");
+            $("main").toggleClass("overflow blur");
         });
 
         $('header .nav a').click(function() {
             $('header .nav').toggleClass("visible");
             $('header .burger').removeClass('cross');
-            $('body').toggleClass("overflow");
+            $('main').toggleClass("overflow blur");
         });
     }
 
 
     //*************************************************************************************Skills display
 
-    $('.html5').mouseenter(function() {
-        $('.text h4').hide().html('HTML5 Skills').fadeIn();
-        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('.text p').typed({
-            strings: ['Good overall knowledge of Html5 elements.'],
-            typeSpeed: 0
-        });
-    });
 
-    $('.css3').mouseenter(function() {
-        $('.text h4').hide().html('Css3 Skills').fadeIn();
+    //*******************************************************************************Front-End
+    $('.html5').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en HTML5/CSS3').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Good overall knowledge of Css3 selectors and pseudo-selectors.'],
+            strings: ['Bonne connaissance des balises HTML, des sélecteurs et pseudo-sélecteurs CSS.'],
             typeSpeed: 0
         });
     });
 
     $('.jquery').mouseenter(function() {
-        $('.text h4').hide().html('Jquery Skills').fadeIn();
+        $('.text h4').hide().html('Connaissances en Jquery').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Good understanding of Jquery equivalents to Javascript Vanilla.'],
+            strings: ['Bonne maitrise globale.'],
             typeSpeed: 0
         });
     });
 
     $('.javascript').mouseenter(function() {
-        $('.text h4').hide().html('Javascript ES6 Skills').fadeIn();
+        $('.text h4').hide().html('Connaissances en Javascript ES6').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Learned before Jquery, directly from ES6, good understanding of Fundamentals and more, <br> Codewars rank : 5kyu.'],
+            strings: ['Appris avant Jquery, directement en ES6, bonne compréhension des fondamentaux et plus,<br> rang Codewars : 5kyu.'],
             typeSpeed: 0
         });
     });
 
     $('.angular').mouseenter(function() {
-        $('.text h4').hide().html('AngularJS Skills').fadeIn();
+        $('.text h4').hide().html('Connaissances en AngularJS / Angular 4').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Beginner but understands the logic behind, learning AngularJS 1.6.'],
+            strings: ['Bonne compréhension d\'AngularJS, Angular 4 en cours d\'apprentissage.'],
             typeSpeed: 0
         });
     });
 
-    $('.back').mouseenter(function() {
-        $('.text h4').hide().html('Back-End Skills').fadeIn();
+    $('.reactjs').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en React').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Beginner, currently learning.'],
+            strings: ['Bonne compréhension des Components, des props et des states.'],
+            typeSpeed: 0
+        });
+    });
+
+    // *****************************************************************************Back-End
+    $('.php').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en PHP').fadeIn();
+        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
+        $('.text p').typed({
+            strings: ['Bonne compréhension des fondamentaux et de la programation orienté objet.'],
+            typeSpeed: 0
+        });
+    });
+
+    $('.nodejs').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en Nodejs').fadeIn();
+        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
+        $('.text p').typed({
+            strings: ['Débutant, en cours d\'apprentissage.'],
+            typeSpeed: 0
+        });
+    });
+
+    $('.mysql').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en SQL').fadeIn();
+        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
+        $('.text p').typed({
+            strings: ['Bonne compréhension des fondamentaux et des tables relationnelles.'],
+            typeSpeed: 0
+        });
+    });
+
+    $('.symfony').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en Symfony').fadeIn();
+        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
+        $('.text p').typed({
+            strings: ['Pratiqué lors d\'exercices, bonne compréhension de Doctrine, des Entities, des Actions, <br> de CRUD et du routing sous forme d\'annotations.'],
+            typeSpeed: 0
+        });
+    });
+
+    $('.redis').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en Redis').fadeIn();
+        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
+        $('.text p').typed({
+            strings: ['Débutant, en cours d\'apprentissage.'],
+            typeSpeed: 0
+        });
+    });
+
+    $('.wordpress').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en Wordpress').fadeIn();
+        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
+        $('.text p').typed({
+            strings: ['Bonne maitrise générale du CMS, pratiqué durant le stage et lors d\'un projet personnel, <br> Visual Composer et Advanced Custom Fields/Custom Post Type.'],
             typeSpeed: 0
         });
     });
 
     //***********************************************************************************About_me
     $('.general').mouseenter(function() {
-        $('#About_me .right h5').hide().html('About me').fadeIn();
+        $('#About_me .right h5').hide().html('A propos de moi').fadeIn();
         $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('#About_me .right p').hide().html('I am a 28 years-old web developper, currently learning at SIMPLonMARS in L\'ecole Centrale de Marseille.<br> As you can see I am not particularly good in web design but I\'m doing my best to get better. <br><br> I started learning web developpement on my own but wanted a more academic environnement to progress faster, <br><br> this is when I applied for SIMPLonMARS <br><br> I\'ve been selected amongst 100+ candidates. I\'m currently learning there. <br><br> I am a Junior , yet extremely motivated , web developper!').fadeIn();
+        $('#About_me .right p').hide().html('Je suis un développeur web de 28 ans, je suis actuellement en cours dapprentissage à L\'école Centrale de Marseille.<br><br> J\'ai débuté le développement web seul mais recherchais un cadre plus académique afin de progresser plus rapidement, <br><br> J\'ai alors candidaté à SIMPLonMARS. <br><br> Je fus alors sélectionné parmis plus de 100 candidats. <br><br> Je suis un développeur Junior extrêmement motivé!').fadeIn();
     });
 
     $('.past').mouseenter(function() {
-        $('#About_me .right h5').hide().html('Past Experiences').fadeIn();
+        $('#About_me .right h5').hide().html('Mes expériences').fadeIn();
         $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('#About_me .right p').hide().html('Nothing related to web developpement but I have a bachelor\'s degree in English and Japanese languages.<br><br> Between January 2013 and August 2016 I worked in an organic shop, as asssistant manager for the last year. <br><br> I\'ve also been volunteering in Scotland for two months in the past two years for a total of 4 months, this experience improved my understanding of english language.').fadeIn();
+        $('#About_me .right p').hide().html('J\'ai effectué un stage dans l\'agence de Communication PUBLICOM à Aix en Provence, j\'ai une licence en Langues Etrangères Appliquées Anglais-Japonais.<br><br> De Janvier 2013 à Aout 2016 j\'ai travaillé dans une enseigne biologique, la dernière année je suis passé directeur adjoint, alors responsable de 4 employés. <br><br> J\'ai également fait du volontariat en Ecosse, 2 mois pendant 2 ans pour un total de 4 mois, cette expérience m\'a permis de renforcer mon Anglais.').fadeIn();
     });
 
     $('.languages').mouseenter(function() {
-        $('#About_me .right h5').hide().html('Spoken Languages').fadeIn();
+        $('#About_me .right h5').hide().html('Langues parlées').fadeIn();
         $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('#About_me .right p').hide().html('French is my mother tongue but I am comfortable with english, <br><br> I still am a begginner in japanese.').fadeIn();
+        $('#About_me .right p').hide().html('Le français est ma langue maternelle mais je suis à l\'aise en Anglais, <br><br> J\'ai un niveau débutant en Japonais.').fadeIn();
     });
 
 });

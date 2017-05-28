@@ -29,16 +29,17 @@ header {
     z-index: 5;
 }
 
-h3 {
+header h3 {
     float: left;
     font-size: 2em;
     line-height: 8vh;
     padding-left: 4%;
     margin: 0;
     color: #d2d9d9;
+    font-family: head;
 }
 
-h3:hover {
+header h3:hover {
     cursor: pointer;
 }
 
@@ -46,6 +47,10 @@ header .nav {
     float: right;
     margin-right: 50px;
     height: inherit;
+}
+
+header .nav img {
+  cursor: pointer;
 }
 
 header.transparent {
@@ -77,11 +82,19 @@ main {
 main #Home {
     display: flex;
     align-items: center;
-    background-image: url(../img/notebook-light.jpg);
+    /*background-image: url(../img/mac.mp4);*/
     background-position: center;
     background-size: cover;
     height: 100vh;
     border-bottom: 4px solid #ED7300;
+}
+
+video#bgvid {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background: url(../img/notebook-light.jpg) no-repeat;
+  background-size: cover;
 }
 
 .introtext {
@@ -139,6 +152,9 @@ main #About_me {
     border-bottom: 4px solid #FFA3B5;
 }
 
+.blur {
+  filter: blur(9px);
+}
 
 /*******************************************************GaugeMeters***/
 
@@ -153,18 +169,23 @@ main #About_me {
     border: 2px solid #353535;
 }
 
-#Skills .back {
+#Skills .back, #Skills .cms {
     border-left: 1px solid black;
 }
 
 #Skills .left {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     height: 60vh;
     border-radius: 10px;
     background-color: #222222;
     border: 2px solid #353535;
-    padding: 20px;
+    padding: 100px;
+    background-image: url(../img/macbook.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 #Skills .right {
@@ -467,6 +488,7 @@ header .nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: left;
     height: 50vh;
 }
 
@@ -519,15 +541,18 @@ footer li a:hover {
 
 @font-face {
     font-family: "head";
-    src: url("../fonts/Little Kid.woff");
+    src: url("../fonts/Sketch.ttf");
 }
 
 @font-face {
     font-family: "base";
-    src: url("../fonts/linowrite.ttf");
+    src: url("../fonts/Lugos-Regular.otf");
 }
 
 @media all and (max-width: 800px) {
+    #Home { background: url(../img/notebook-light.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+
     header .burger {
         display: block;
         z-index: 7;
@@ -596,6 +621,8 @@ footer li a:hover {
     }
     #Skills .left {
         height: 50vh;
+        background-image: none;
+        padding: 20px;
     }
 
     #Skills h4, #Skills .container .right .front div, #Skills .container .right .back div {
