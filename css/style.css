@@ -82,7 +82,6 @@ main {
 main #Home {
     display: flex;
     align-items: center;
-    /*background-image: url(../img/mac.mp4);*/
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -550,7 +549,7 @@ footer li a:hover {
     src: url("../fonts/Lugos-Regular.otf");
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 801px) {
     #Home { background: url(../img/notebook-light.jpg) #000 no-repeat center center fixed; }
     #bgvid { display: none; }
 
@@ -611,19 +610,19 @@ footer li a:hover {
         font-size: 1.5em;
     }
     #Skills h4 {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     #Skills .text h4 {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     #Skills .text p{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
     #Skills .left {
         height: 50vh;
         background-image: none;
-        padding: 20px;
+        padding: 10px;
     }
 
     #Skills h4, #Skills .container .right .front div, #Skills .container .right .back div {
@@ -636,7 +635,7 @@ footer li a:hover {
 
     #Work .grid-sizer, .grid-item {
         box-sizing: border-box;
-        width: 50%;
+        width: 33.33%;
     }
 
     #Work .grid-item div h5 {
@@ -664,15 +663,15 @@ footer li a:hover {
     }
 
     #About_me h5 {
-      font-size: 4vw;
+      font-size: 3vw;
     }
 
     #About_me p {
-      font-size: 2.3vw;
+      font-size: 2vw;
     }
 
     #retour {
-        width: 10vw;
+        width: 7vw;
     }
 
     footer {
