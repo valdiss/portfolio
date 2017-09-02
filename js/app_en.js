@@ -126,7 +126,7 @@ $(document).ready(function() {
         $('.text h4').hide().html('Angular Skills').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Good understanding of Angular, learned from the teaching platform Udemy, from the <em>Angular 4 (formerly Angular 2) - The Complete Guide</em> course from Maximilian Schwartzmüller.'],
+            strings: ['Good understanding of Angular, learned from the teaching platform Udemy, <br>from the course from Maximilian Schwartzmüller <br><em>Angular 4 (formerly Angular 2) - The Complete Guide</em>.'],
             typeSpeed: 0
         });
     });
@@ -154,7 +154,7 @@ $(document).ready(function() {
         $('.text h4').hide().html('Nodejs Skills').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Beginner, currently learning.'],
+            strings: ['Beginner, currently learning using Express.'],
             typeSpeed: 0
         });
     });
@@ -177,21 +177,12 @@ $(document).ready(function() {
         });
     });
 
-    $('.redis').mouseenter(function() {
-        $('.text h4').hide().html('Redis Skills').fadeIn();
+    $('.mongo').mouseenter(function() {
+        $('.text h4').hide().html('MongoDb Skills').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Beginner, currently learning.'],
-            typeSpeed: 0
-        });
-    });
-
-    $('.wordpress').mouseenter(function() {
-        $('.text h4').hide().html('Wordpress Skills').fadeIn();
-        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('.text p').typed({
-            strings: ['Good understanding of the CMS, practiced during internship and personnal project,<br> Visual Composer and Advanced Custom Fields/Custom Post Type.'],
-            typeSpeed: 0
+            strings: ['Beginner, currently learning using mongoose.'],
+            typeSpeed: 1
         });
     });
 
@@ -199,7 +190,7 @@ $(document).ready(function() {
     $('.general').mouseenter(function() {
         $('#About_me .right h5').hide().html('About me').fadeIn();
         $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('#About_me .right p').hide().html('I am a 28 years-old web developper, currently learning at SIMPLonMARS in L\'école Centrale de Marseille.<br><br> I started learning web developpement on my own but wanted a more academic environnement to progress faster, <br><br> this is when I applied for SIMPLonMARS. <br><br> I\'ve been selected amongst 100+ candidates. I\'m currently learning there. <br><br> I am a Junior , yet extremely motivated , web developper!').fadeIn();
+        $('#About_me .right p').hide().html('I am a 28 years-old web developper, graduated from SIMPLonMARS in L\'école Centrale de Marseille.<br><br> I started learning web developpement on my own but wanted a more academic environnement to progress faster, <br><br> this is when I applied for SIMPLonMARS. <br><br> I\'ve been selected amongst 100+ candidates.<br><br> I am a Junior , yet extremely motivated , web developper!').fadeIn();
     });
 
     $('.past').mouseenter(function() {
@@ -211,7 +202,7 @@ $(document).ready(function() {
     $('.languages').mouseenter(function() {
         $('#About_me .right h5').hide().html('Spoken Languages').fadeIn();
         $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('#About_me .right p').hide().html('French is my mother tongue but I am comfortable with English, <br><br> I still am a begginner in Japanese.').fadeIn();
+        $('#About_me .right p').hide().html('French is my mother tongue but I am comfortable with English, <br><br> I still am a beginner in Japanese.').fadeIn();
     });
 
 });

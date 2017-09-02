@@ -168,7 +168,7 @@ main #About_me {
     border: 2px solid #353535;
 }
 
-#Skills .back, #Skills .cms {
+#Skills .back {
     border-left: 1px solid black;
 }
 

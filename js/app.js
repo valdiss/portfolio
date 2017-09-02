@@ -126,7 +126,7 @@ $(document).ready(function() {
         $('.text h4').hide().html('Connaissances en Angular').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Bonne compréhension d\'Angular, appris à l\'aide de la plateforme d\'apprentissage Udemy en suivant le cours de Maximilian Schwartzmüller <em>Angular 4 (formerly Angular 2) - The Complete Guide</em>.'],
+            strings: ['Bonne compréhension d\'Angular, appris à l\'aide de la plateforme d\'apprentissage Udemy <br>en suivant le cours de Maximilian Schwartzmüller <br><em>Angular 4 (formerly Angular 2) - The Complete Guide</em>.'],
             typeSpeed: 0
         });
     });
@@ -154,7 +154,7 @@ $(document).ready(function() {
         $('.text h4').hide().html('Connaissances en Nodejs').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Débutant, en cours d\'apprentissage.'],
+            strings: ['Débutant, en cours d\'apprentissage avec Express.'],
             typeSpeed: 0
         });
     });
@@ -177,20 +177,11 @@ $(document).ready(function() {
         });
     });
 
-    $('.redis').mouseenter(function() {
-        $('.text h4').hide().html('Connaissances en Redis').fadeIn();
+    $('.mongo').mouseenter(function() {
+        $('.text h4').hide().html('Connaissances en MongoDb').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Débutant, en cours d\'apprentissage.'],
-            typeSpeed: 0
-        });
-    });
-
-    $('.wordpress').mouseenter(function() {
-        $('.text h4').hide().html('Connaissances en Wordpress').fadeIn();
-        $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('.text p').typed({
-            strings: ['Bonne maitrise générale du CMS, pratiqué durant le stage et lors d\'un projet personnel, <br> Visual Composer et Advanced Custom Fields/Custom Post Type.'],
+            strings: ['Débutant, en cours d\'apprentissage avec mongoose.'],
             typeSpeed: 0
         });
     });
@@ -199,7 +190,7 @@ $(document).ready(function() {
     $('.general').mouseenter(function() {
         $('#About_me .right h5').hide().html('A propos de moi').fadeIn();
         $('#About_me .right h5').css("color", colors[Math.floor(Math.random() * colors.length)]);
-        $('#About_me .right p').hide().html('Je suis un développeur web de 28 ans, je suis actuellement en cours dapprentissage à L\'école Centrale de Marseille.<br><br> J\'ai débuté le développement web seul mais recherchais un cadre plus académique afin de progresser plus rapidement, <br><br> J\'ai alors candidaté à SIMPLonMARS. <br><br> Je fus alors sélectionné parmis plus de 100 candidats. <br><br> Je suis un développeur Junior extrêmement motivé!').fadeIn();
+        $('#About_me .right p').hide().html('Je suis un développeur web de 28 ans, diplomé de la formation SIMPLonMARS à L\'école Centrale de Marseille.<br><br> J\'ai débuté le développement web seul mais recherchais un cadre plus académique afin de progresser plus rapidement, <br><br> J\'ai alors candidaté à SIMPLonMARS. <br><br> Je fus alors sélectionné parmis plus de 100 candidats. <br><br> Je suis un développeur Junior extrêmement motivé!').fadeIn();
     });
 
     $('.past').mouseenter(function() {
