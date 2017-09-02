@@ -123,10 +123,10 @@ $(document).ready(function() {
     });
 
     $('.angular').mouseenter(function() {
-        $('.text h4').hide().html('AngularJS / Angular 4 Skills').fadeIn();
+        $('.text h4').hide().html('Angular Skills').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Good understanding of AngularJS 1.6, currently learning Angular 4.'],
+            strings: ['Good understanding of Angular, learned from the teaching platform Udemy, from the <em>Angular 4 (formerly Angular 2) - The Complete Guide</em> course from Maximilian Schwartzmüller.'],
             typeSpeed: 0
         });
     });

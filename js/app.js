@@ -123,10 +123,10 @@ $(document).ready(function() {
     });
 
     $('.angular').mouseenter(function() {
-        $('.text h4').hide().html('Connaissances en AngularJS / Angular 4').fadeIn();
+        $('.text h4').hide().html('Connaissances en Angular').fadeIn();
         $('.text h4').css("color", colors[Math.floor(Math.random() * colors.length)]);
         $('.text p').typed({
-            strings: ['Bonne compréhension d\'AngularJS, Angular 4 en cours d\'apprentissage.'],
+            strings: ['Bonne compréhension d\'Angular, appris à l\'aide de la plateforme d\'apprentissage Udemy en suivant le cours de Maximilian Schwartzmüller <em>Angular 4 (formerly Angular 2) - The Complete Guide</em>.'],
             typeSpeed: 0
         });
     });
