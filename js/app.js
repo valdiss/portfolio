@@ -75,7 +75,7 @@ $(document).ready(function() {
         $('.burger span').css('background-color', '#d2d9d9');
     });
 
-    if ($(window).width() <= 800) {
+    if ($(window).width() <= 801) {
 
         $('.burger').click(function() {
             $('header .nav').toggleClass("visible");
